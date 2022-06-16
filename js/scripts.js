@@ -43,9 +43,17 @@ AI.prototype.winner = function() {
   if (this.totalScore >= 100) {
     alert("the AI is getting smarter");
     this.score = 0;
-    this.totalScore = 0
+    this.totalScore = 0;
   };
 };
+AI.prototype.reset = function() {
+  this.score = 0;
+  this.roll1 = 0;
+  this.roll2 = 0;
+  this.roll3 = 0;
+  this.roll4 = 0;
+  this.totalScore = 0;
+}
 
 player.prototype.getInt = function () {
   this.roll1 = Math.ceil(Math.random() * 6)
@@ -73,10 +81,15 @@ player.prototype.addTotalScore = function() {
 player.prototype.winner = function() {
   if (this.totalScore >= 100) {
     alert("player  wins");
-    player.score = 0;
-    player.totalScore = 0;
   };
 };
+
+player.prototype.reset = function() {
+  this.score = 0;
+  this.roll1 = 0;
+  this.roll2 = 0;
+  this.totalScore = 0;
+}
 // UI logic
 
 //player 1 roll
@@ -151,5 +164,14 @@ $(document).ready(function() {
     $("#AI1TotalScore").html(AI1.totalScore)
     AI1.winner();
     console.log(AI1);
+  });
+});
+
+//reset button
+$(document).ready(function() {
+  $("#buttonReset").click(function(event) {
+    event.preventDefault();
+    AI.reset();
+    player.reset();
   });
 });
