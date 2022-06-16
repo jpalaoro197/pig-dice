@@ -1,8 +1,9 @@
 // Business Logic
-function player(name, score, roll) {
+function player(name, score, roll, roll2, totalScore) {
   this.name = name;
   this.score = 0;
   this.roll = 0;
+  this.roll2 = 0;
   this.totalScore = 0;
 };
 
@@ -11,18 +12,23 @@ let player2 = new player("tyler", 0, 0);
 
 
 
-player.prototype.getInt = function (max) {
-  this.roll = Math.ceil(Math.random() * 6);
+player.prototype.getInt = function () {
+  this.roll = Math.ceil(Math.random() * 6)
+  ;
+
+  this.roll2 = Math.ceil(Math.random() * 6)
+  ;
+  console.log(this.roll,this.roll2);
 };
 
 player.prototype.addScore = function () {
-  if (this.roll > 1) {
-    this.score += this.roll;
-  } 
-  else if (this.roll = 1) {
+  if (this.roll < 2 || this.roll2 < 2) {
     this.score = 0;
     alert("turnover fool");
   }
+  else if (this.roll && this.roll2 > 1) {
+    this.score += this.roll + this.roll2;
+  } 
 };
 
 player.prototype.addTotalScore = function() {
@@ -45,6 +51,7 @@ $(document).ready(function() {
     
     $("#player1Score").html(player1.score);
     $("#player1LastRoll").html(player1.roll);
+    $("#player1Roll2").html(player1.roll2);
     console.log(player1);
   });
 });
@@ -56,6 +63,7 @@ $(document).ready(function() {
     player2.addScore();
     $("#player2Score").html(player2.score);
     $("#player2LastRoll").html(player2.roll);
+    $("#player2Roll2").html(player1.roll2);
     console.log(player1);
 
   });
@@ -92,4 +100,3 @@ $(document).ready(function() {
     $("body").addClass("red-background");
   });
 });
-
