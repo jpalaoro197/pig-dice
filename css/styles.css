@@ -1,13 +1,53 @@
-.column {
+.column1 {
+display: none;
+}
+
+
+.dark-background {
+  background-color: black;
+  color: dimgray;
+}
+
+.light-background {
+  background-color:rgba(162, 166, 167, 0.479)
+  color rgb(239, 234, 243)
+}
+
+.column1 {
   border: 2px solid black;
   padding: 15px;
-  background-color: rgb(165, 186, 245);
+  background-color: green;
   display: block;
   margin: auto;
   width: 40%;
   box-sizing: border-box;
   float: left;
+  color: rgb(0, 0, 0);
 }
- span {
+
+  .column2 {
+  border: 2px solid black;
+  padding: 15px;
+  background-color: red;
+  display: block;
+  margin: auto;
+  width: 40%;
+  box-sizing: border-box;
+  float: left;
+  color: rgb(0, 0, 0);
+}
+
+  .column3 {
+  border: 2px solid black;
+  padding: 15px;
+  background-color: blue;
+  display: block;
+  margin: auto;
+  width: 40%;
+  box-sizing: border-box;
+  float: left;
+  color: white;
+}
+span {
   margin-left: 45%;
- }
+}
