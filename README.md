@@ -31,39 +31,46 @@ This is a Pig Dice game with options for playing with one die or two dice. Playe
 
 ## Known Bugs
 
-* __
+* _None_
 
 ## License
 
 _<p><a href="LICENSE.txt">MIT</a></p>_
 
-Copyright (c) 2022 Jacob Palaoro & Tyler Emmerson(s)_
+Copyright (c) 2022 Jacob Palaoro & Tyler Emmerson(s)
 
 ## Tests
 
 Test 1
-Describe: create a random 1-6 number generator
+Describe: create player object
 Code: 
- 
-
 
 
 Test 2
-Describe: create player object
+Describe: create a random 1-6 number generator
 Code: 
- 
 
 
 Test 3 
-Describe: 
+Describe: create ui logic framework
 Code:
 
-Test 3 
-Describe: 
+
+Test 4 
+Describe: capitalize Math in "this.roll = Math.ceil(Math.random() * 6);" or it doesn't launch
+Code: this.roll = Math.ceil(Math.random() * 6);
+
+
+Test 5
+Describe: create an else if function for what happens when a 1 is rolled for the score
+Code: 
+
+
+Test 6
+Describe: create a way to save your score to totalScore so it's not lost
+Code: 
+
+
+Test 7
+Describe: two hold buttons for both players
 Code:
-
- 
-
-
-
-
