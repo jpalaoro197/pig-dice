@@ -1,20 +1,16 @@
-.column1 {
-display: none;
-}
 
-
-.dark-background {
-  background-color: black;
+.red-background {
+  background-color: red ;
   color: dimgray;
 }
 
-.light-background {
-  background-color:rgba(162, 166, 167, 0.479)
-  color rgb(239, 234, 243)
+.green-background {
+  background-color:green;
+  color: rgb(239, 234, 243);
 }
 
 .column1 {
-  border: 2px solid black;
+  border: 2px solid green;
   padding: 15px;
   background-color: green;
   display: block;
@@ -26,7 +22,7 @@ display: none;
 }
 
   .column2 {
-  border: 2px solid black;
+  border: 2px solid red;
   padding: 15px;
   background-color: red;
   display: block;
@@ -38,7 +34,7 @@ display: none;
 }
 
   .column3 {
-  border: 2px solid black;
+  border: 2px solid blue;
   padding: 15px;
   background-color: blue;
   display: block;
@@ -46,7 +42,7 @@ display: none;
   width: 40%;
   box-sizing: border-box;
   float: left;
-  color: white;
+  color: black;
 }
 span {
   margin-left: 45%;

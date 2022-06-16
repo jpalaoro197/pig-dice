@@ -43,12 +43,20 @@ Copyright (c) 2022 Jacob Palaoro & Tyler Emmerson(s)
 
 Test 1
 Describe: create player object
-Code: 
+Code: function player(name, score, roll, roll2, totalScore) {
+  this.name = name;
+  this.score = 0;
+  this.roll = 0;
+  this.roll2 = 0;
+  this.totalScore = 0;
+};
 
 
 Test 2
 Describe: create a random 1-6 number generator
-Code: 
+Code: player.prototype.getInt = function () {
+  this.roll = Math.ceil(Math.random() * 6)
+  ;
 
 
 Test 3 
@@ -68,9 +76,31 @@ Code:
 
 Test 6
 Describe: create a way to save your score to totalScore so it's not lost
-Code: 
+Code: player.prototype.addTotalScore = function() {
+  this.totalScore += this.score;
+  this.score = 0;
+};
 
 
 Test 7
 Describe: two hold buttons for both players
-Code:
+Code: $(document).ready(function() {
+  $("#player1Hold").click(function(event) {
+    event.preventDefault();
+    player1.addTotalScore();
+    $("#player1TotalScore").html(player1.totalScore)
+    player1.winner();
+  });
+});
+
+
+Test 8
+Describe: same game but use two dice
+Code:  if (this.roll < 2 || this.roll2 < 2) {
+    this.score = 0;
+    alert("turnover fool");
+  }
+  else if (this.roll && this.roll2 > 1) {
+    this.score += this.roll + this.roll2;
+  } 
+};
