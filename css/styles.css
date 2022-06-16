@@ -1,53 +1,77 @@
-
-.red-background {
-  background-color: red ;
-  color: dimgray;
+#Background{
+background-color: black;
 }
-
-.green-background {
-  background-color:green;
-  color: rgb(239, 234, 243);
+.container{
+  height: 100vh;
+  background: black;
+  background-size: 100%; 
 }
-
 .column1 {
-  border: 10px solid rgb(255, 255, 255);
+  border: 10px solid rgb(68, 150, 86);
   padding: 15px;
   background-color: green;
   display: block;
-  margin: auto;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   width: 40%;
   box-sizing: border-box;
   float: left;
   color: rgb(0, 0, 0);
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
   .column2 {
-  border: 10px solid rgb(255, 255, 255);
+  border: 10px solid rgb(141, 75, 75);
   padding: 15px;
   background-color: red;
   display: block;
-  margin: auto;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   width: 40%;
   box-sizing: border-box;
   float: right;
   color: rgb(0, 0, 0);
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
   .column3 {
-  border: 10px solid rgb(255, 255, 255);
+  border: 10px solid rgb(77, 82, 157);
   border-radius: 8px;
-  padding: 15px;
+  padding: 10px;
   background-color: blue;
   display: block;
-  margin: auto;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   width: 40%;
   box-sizing: border-box;
   float: left;
   color: black;
-  
+  border-radius: 20px;
 }
-span {
+
+.column4 {
+  border: 10px solid rgb(192, 176, 31);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(255, 251, 0);
+  display: block;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  width: 40%;
+  box-sizing: border-box;
+  float: right;
+  color: black;
+  border-radius: 20px;
+}
+
+  span {
   margin-left: 45%;
 }
