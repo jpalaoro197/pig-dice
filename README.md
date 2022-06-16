@@ -32,8 +32,9 @@ This is a Pig Dice game with options for playing with one die or two dice. Playe
 ## Known Bugs
 
 * no clear distinction of winner. IE Player 1 or Player 2 or AI.
-* CSS centering could use some more work
+* CSS centering could use some more work.
 * Keeping the boxes staying where they are when the hold button is pressed.
+
 
 ## License
 
