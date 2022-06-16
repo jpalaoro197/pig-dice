@@ -39,6 +39,13 @@ AI.prototype.addTotalScoreAI = function() {
   this.totalScore += this.score;
   this.score = 0;
 };
+AI.prototype.winner = function() {
+  if (this.totalScore >= 100) {
+    alert("the AI is getting smarter");
+    this.score = 0;
+    this.totalScore = 0
+  };
+};
 
 player.prototype.getInt = function () {
   this.roll1 = Math.ceil(Math.random() * 6)
@@ -66,6 +73,8 @@ player.prototype.addTotalScore = function() {
 player.prototype.winner = function() {
   if (this.totalScore >= 100) {
     alert("player  wins");
+    player.score = 0;
+    player.totalScore = 0;
   };
 };
 // UI logic
@@ -140,6 +149,7 @@ $(document).ready(function() {
     $("#AIRoll3").html(AI1.roll3);
     $("#AIRoll4").html(AI1.roll4);
     $("#AI1TotalScore").html(AI1.totalScore)
+    AI1.winner();
     console.log(AI1);
   });
 });
